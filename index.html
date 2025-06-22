@@ -7,6 +7,19 @@
 </head>
 <body>
     <h1>Simple Pong Game</h1>
+    <div class="controls">
+        <label>
+            Set Score:
+            <input type="number" id="setScore" value="5" min="1" max="20">
+        </label>
+        <label>
+            Sets to Win:
+            <input type="number" id="setsToWin" value="2" min="1" max="10">
+        </label>
+        <button id="startBtn">Start Game</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <div id="setInfo"></div>
     <canvas id="pong" width="800" height="500"></canvas>
     <script src="game.js"></script>
 </body>
